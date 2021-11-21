@@ -178,10 +178,34 @@ button:hover{
     position: relative;
 }
 
+
+.myimg{
+    position: relative;
+    flex-basis: 30%;
+    align-items: center;
+}
+
+.myimg .propic{
+    width: 110%;
+    border-radius: 10px 0px 10px 0px;
+}
+
 .information{
     flex-basis: 70%;
     position: relative;
     margin-left: 50px;
+}
+
+.infobg{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: white;
+    opacity: 0.35;
+    border-radius: 0px 0px 0px 0px;
+    height: 100%;
+    width: 67%;
+    transform: translateX(0px);
 }
 
 .information p{
@@ -193,16 +217,11 @@ button:hover{
     color: #fff;
     font-style: bold;
     font-family: monospace;
-}
-
-.myimg{
-    position: relative;
-    flex-basis: 30%;
-    align-items: center;
-}
-
-.myimg .propic{
-    width: 100%;
+    z-index: 1;
+    border: 1px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to right, #11998e, #38ef7d);
 }
 
 .content::before{
@@ -284,19 +303,28 @@ button:hover{
     .content{
         flex-direction: column;
         margin: 50px 0;
+
     }
     .myimg{
         flex-basis: 100%;
         margin-bottom: 50px;
+        padding-left: 100px;
     }
     
     .myimg .propic{
-        width: 50%;
-        padding-left: 100px;
+        flex-basis: 100%;
+        width: 70%;
     }
     
     .information{
         flex-basis: 100%;
+        flex-direction: column-reverse;
+    }
+    
+    .infobg{
+        height: 58%;
+        width: 85%;
+        transform: translateY(297px);
     }
     
     .information p{
