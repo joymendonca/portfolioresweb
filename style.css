@@ -194,6 +194,7 @@ button:hover{
     flex-basis: 70%;
     position: relative;
     margin-left: 50px;
+    display: flex;
 }
 
 .infobg{
