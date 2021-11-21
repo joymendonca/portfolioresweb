@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="images/logo.png" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="https://github.com/joymendonca/">Projects</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="images/menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+        
+        <div class="row">
+            <div class="content">
+               <div class="myimg">
+                   <img src="images/propic.jpg" class="propic">
+               </div>
+               <div class="information">
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum. Pharetra sit amet aliquam id. Lectus nulla at volutpat diam ut venenatis tellus. In hendrerit gravida rutrum quisque non tellus orci ac. Odio ut enim blandit volutpat. Quis lectus nulla at volutpat diam ut venenatis. Convallis a cras semper auctor neque vitae tempus quam. Blandit volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque. Maecenas sed enim ut sem viverra aliquet eget sit amet. Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis. Volutpat blandit aliquam etiam erat velit scelerisque in dictum non.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum. Pharetra sit amet aliquam id. Lectus nulla at volutpat diam ut venenatis tellus. In hendrerit gravida rutrum quisque non tellus orci ac. Odio ut enim blandit volutpat. Quis lectus nulla at volutpat diam ut venenatis. Convallis a cras semper auctor neque vitae tempus quam. Blandit volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque. Maecenas sed enim ut sem viverra aliquet eget sit amet. Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis. Volutpat blandit aliquam etiam erat velit scelerisque in dictum non.</p>
+               </div>
+               <div class="infobg"></div>
+                <div class="breaker"></div>
+            </div>
+        </div>
+        
+        <div class="cpr">
+            <p>Website designed by Joy Mendonca</p>
+            <div class="cpr-box"></div>
+        </div>
+    </div>
+    
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+        
+        function togglemenu(){
+            if(menuList.style.maxHeight == "0px"){
+                menuList.style.maxHeight = "130px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>
+</html>
