@@ -172,29 +172,31 @@ button:hover{
 
 
 
-
 .content{
-    display: flex;
     position: relative;
 }
 
 
 .myimg{
     position: relative;
-    flex-basis: 30%;
     align-items: center;
 }
 
 .myimg .propic{
-    width: 110%;
+    width: 20%;
     border-radius: 10px 0px 10px 0px;
 }
 
 .information{
-    flex-basis: 70%;
     position: relative;
-    margin-left: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border: 1px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to right, #11998e, #38ef7d);
     display: flex;
+    flex-flow: column;
 }
 
 /*
@@ -211,20 +213,27 @@ button:hover{
     transform: translateX(0px);
 } */
 
+.information h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 50%;
+    color: #fff;
+    font-style: bold;
+    font-family: sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
 .information p{
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
     font-size: 20px;
-    font-weight: 100;
     color: #fff;
-    font-style: bold;
     font-family: monospace;
     z-index: 1;
-    border: 1px solid;
-    border-image-slice: 1;
-    border-width: 5px;
-    border-image-source: linear-gradient(to right, #11998e, #38ef7d);
+    margin-bottom: 20px;
 }
 
 .content::before{
@@ -238,7 +247,53 @@ button:hover{
     border-radius: 6px;
 }
 
+.firstset-skills{
+    text-align: center;
+    margin-bottom: 10px;
+}
 
+.secondset-skills{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.icon{
+    width: 8rem;
+    height: 8rem;
+}
+
+.icon-card{
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+    padding: 20px;
+    margin: 10px;
+}
+
+.socials{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.sico {
+    width: 3rem;
+    height: 3rem;
+}
+
+
+.contact-form-container {
+    padding-left: 350px;
+    padding-right: 350px;
+    text-align: center;
+  max-width: 40.75rem;
+  margin: 5px;
+}
+
+.contact-form-container label {
+  line-height: 2.7em;
+  color: #fff;
+}
 
 
 
@@ -303,34 +358,50 @@ button:hover{
         font-size: 15px;
     }
     
-    .content{
-        flex-direction: column;
-        margin: 50px 0;
-
-    }
-    .myimg{
-        flex-basis: 100%;
-        margin-bottom: 50px;
-        padding-left: 100px;
+    .information{
+        margin-left: 5px;
+        margin-right: 5px;
     }
     
     .myimg .propic{
-        flex-basis: 100%;
-        width: 70%;
+        width: 50%;
     }
     
-    .information{
-        flex-basis: 100%;
-        flex-direction: column-reverse;
-    }
-    
-    .infobg{
-        height: 58%;
-        width: 85%;
-        transform: translateY(297px);
+    .information h1{
+        font-size: 20px;
     }
     
     .information p{
         font-size: 10px;
     }
+    
+    .icon {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .icon-card {
+        background-color: #fff;
+        border-radius: 11px;
+        box-shadow: 0 3px 10px var(--secondary-shadow);
+        padding: 5px;
+        margin: 5px;
+    }
+    
+    
+    .contact-form-container {
+        padding-left: 0px;
+        padding-right: 0px;
+        text-align: center;
+        max-width: 40.75rem;
+        margin: 5px;
+    }
+
+    .contact-form-container label {
+        line-height: 2.7rem;
+        color: #fff;
+    }
+
+    
+    
 }
